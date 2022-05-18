@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 – Peça ao usuário para digitar várias idades. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.</title>
+</head>
+<body>
+    <script>
+        let idade1 = parseInt(prompt("Informe a 1º idade:"));
+
+        let idade2 = parseInt(prompt("Informe a 2º idade:"));
+
+        let idade3 = parseInt(prompt("Informe a 3º idade:"));
+
+        let idade4 = parseInt(prompt("Informe a 4º idade:"));
+
+        let idade5 = parseInt(prompt("Informe a 5º idade:"));
+
+        var maiorIdade = 0
+        var menorIdade = 0
+
+       if (idade1 >= 18) {maiorIdade = maiorIdade + 1}
+
+         if (idade2 >= 18) {maiorIdade = maiorIdade + 1}
+
+         if (idade3 >= 18) {maiorIdade = maiorIdade + 1}
+
+         if (idade4 >= 18) {maiorIdade = maiorIdade + 1}
+
+         if (idade5 >= 18) {maiorIdade = maiorIdade + 1}
+         
+         if (idade1 < 18) {menorIdade = menorIdade + 1}
+
+         if (idade2 < 18) {menorIdade = menorIdade + 1}
+
+         if (idade3 < 18) {menorIdade = menorIdade + 1}
+
+         if (idade4 < 18) {menorIdade = menorIdade + 1}
+
+         if (idade5 < 18) {menorIdade = menorIdade + 1}
+
+
+        alert(maiorIdade + " pessoa(s) tem mais que 18 anos, e " + menorIdade + " pessoa(s) tem menos que 18 anos")
+        
+
+        
+
+        
+
+        
+        
+    </script>
+</body>
+</html>

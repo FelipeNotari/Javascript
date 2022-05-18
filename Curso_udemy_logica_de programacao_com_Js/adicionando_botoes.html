@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <button onclick = "mostrarTabuada()" >Criar tabuada</button>
+    <button onclick=  "limparTabuada()"  >Limpar tabuada</button> 
+
+    <!--
+         Quando usamos "onclick" ele ira atribuir  o valor: "mostrarTabuada()" ao cick do botão, ou seja quando clicarmos no botão que foi criado na tela, sera "enviado" um valor e esse valor é o que esta dentro das ""  
+    -->
+
+    <div id="output"></div>
+
+    <script>
+
+        function mostrarTabuada() 
+        { 
+            alert ("mostrarTabuada foi chamada")
+        }
+
+        let output = document.querySelector("#output");
+        // ".querySelector" serve para selecionar algo do html para dentro de uma variável no Js, no caso a div com id "output" está sendo atribuida a variável output.
+
+        let mensagem = "Isso ira ser reproduzido em tela";
+
+        output.innerHTML = mensagem;
+
+        // Poderia ter sido feito assim: output.innerHTML = "qualquer coisa aqui" porem é recomendado usar uma variável, no caso a variável "mensagem"
+
+        // "innerHTML" vai adicionar um valor ao o que está atráz do ponto, ou seja vai adicionar ("Isso ira ser reproduzido em tela" (pois é o valor da variável mensagem)) a variavel output
+
+    </script>
+</body>
+</html> 

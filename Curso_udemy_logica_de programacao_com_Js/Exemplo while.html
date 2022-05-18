@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de repetição "while. Criando uma tabuada que vai até 1000</title>
+</head>
+<body>
+    <script>
+        
+        let numero = Number(prompt("Digite um número"));
+
+        let indice = 1;
+
+        while(indice <= 1000)
+         {
+            document.write(numero + " x " + indice + " = " + (numero * indice) + " <br>");
+
+            indice = indice + 1;
+
+            if (i % 10 === 0 || i > 0) {document.write("<hr>")}
+        }
+    </script>
+
+    <!-- 
+        Sempre que usar "while" é importante verificar, se em algum momento esse loop tera fim, ou seja, em algum momento a afirmação que está dentro dos parêntese "(indice <= 1000)" precisa ser falsa.
+
+        "document.write" é uma função que imprime seu valor interno direto na tela, mas deve ser usada somente em exemplos para didática. 
+    -->
+</body>
+</html>

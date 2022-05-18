@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício dos gastos</title>
+</head>
+
+<body>
+
+    <script>
+        let rendaMensal = Number(prompt("Informe sua renda mensal"));
+
+        let gastoMoradia = Number(prompt("Informe seu gasto com moradia"));
+
+        let gastoEducacao = Number(prompt("Informe seu gasto com educação"));
+
+        let gastoTransporte = Number(prompt("Informe seu gasto com transporte"));
+
+
+        gastoMoradia = (gastoMoradia / rendaMensal) * 100;
+        
+        gastoEducacao = (gastoEducacao / rendaMensal) * 100;
+
+        gastoTransporte = (gastoTransporte / rendaMensal) * 100;
+
+
+        let valorMaxMoradia = rendaMensal * 0.3;
+
+        let valorMaxEducacao = rendaMensal * 0.20;
+
+        let valorMaxTransporte = rendaMensal * 0.15;
+
+
+        if (gastoMoradia <= 30)
+        {
+            alert("Seus gastos com moradia estão dentro da margem recomendada.");
+        } 
+        else
+        {
+            alert("O maximo de sua renda comprometida com moradia deveria ser de: " + valorMaxMoradia);
+        }
+
+
+        if (gastoEducacao <= 20)
+         {
+            alert("Seus gastos com educação estão dentro da margem recomendada.");
+         } 
+        else
+        {
+            alert("O maximo de sua renda comprometida com educação deveria ser de: " + valorMaxEducacao);
+        }
+
+
+        if (gastoTransporte <= 15)
+        {
+            alert("Seus gastos com transporte estão dentro da margem recomendada.");
+        } 
+        else
+        {
+            alert("O maximo de sua renda comprometida com transporte deveria ser de: " + valorMaxTransporte);
+        }
+
+    </script>
+</body>
+</html>

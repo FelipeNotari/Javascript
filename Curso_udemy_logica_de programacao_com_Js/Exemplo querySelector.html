@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+
+        let output = document.querySelector("#output");
+
+        // nesse momento a minha variável "output" está recebendo tudo o que estiver na div com id "output"
+
+        output.innerHTML = "Texto inserido por Js"
+
+        //O ".innerHTML" serve para modificar o HTML diretamente pelo Js
+
+        //Basicamente o que aconteceu até agora foi que eu criei uma variavel (let = output) para "chamar" a div com o id "output", após isso eu usó a variavel output seguida do .innerHTML para eu poder modificala pelo Js
+
+        /* Esse exemplo acima não está errado, porem por questões de performance, é melhor fazer como o exemplo abaixo:
+        
+        ou seja, criando uma variavel
+
+        let mensagem = "bla bla bla";
+
+        output.innerHTML = mensagem;
+
+        */
+        
+        
+    </script>
+</body>
+</html> 

@@ -1,0 +1,1 @@
+Testes e exercícios, com a finalidade de treinar minhas habilidades, para futuramente desenvolver projetos, sejam pessoais ou profissionais.

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para este exercício, mostre na tela todos os anos a partir de 1004 até o ano 2017, pulando os anos bissextos.</title>
+</head>
+<body>
+    <script>
+
+        for (ano = 1004; ano <= 2017; ano = ano + 4)
+        {
+            if(!(ano % 100 === 0) || ano % 400 === 0)
+            {
+                document.write(ano + "<br>")
+            }
+
+            else 
+            {
+                document.write(ano + " Este ano não é bissexto" + "<br>");
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+<!--
+    Ano bissexto é todo aquele que é múltiplo de 4 e não é múltiplo de 100, porem se ele for múltiplo de 100 e de 400 ele é bissexto.
+
+-->
+
+<!--
+    Mesmo Ex porem, utilizando while
+    var ano = 1004;
+
+        while(ano <= 2017)
+        {
+             if( !(ano % 100 === 0) || (ano % 400 === 0)) 
+             {
+                 document.write(ano + "<br>");
+             }
+             else 
+             {
+                 document.write(ano + "não é bissexto <br>");
+             }
+             ano += 4;
+         }
+-->

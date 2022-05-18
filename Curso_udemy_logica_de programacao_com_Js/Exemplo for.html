@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando uma tabuada que vai até 1000 e adicionando uma linha a cada dezena, ou seja, entre o 10 e 11 e assim por diante</title>
+</head>
+<body>
+    <script>
+
+        let numero = Number(prompt("Digite um número"));
+
+        for (let i = 1; i <= 1000; i++ ) 
+        {
+            document.write(numero + " x " + i + " = " + (numero * i) + "<br>");
+
+            if (i % 10 === 0 &&  i > 0) {document.write("<hr>")}
+        }        
+    </script>
+
+    <!--
+        "i++" ou "i += i" ou "i = i + 1" são tudo a mesma coisa, ou seja em todos esses casos, está sendo adicionado o valor "1" à variavel "i".
+    -->
+</body>
+</html>

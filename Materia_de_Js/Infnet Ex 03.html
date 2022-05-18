@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 3 – Peça ao usuário para digitar 5 números em uma caixa de texto. Verifique qual é o maior número e exiba-o.
+    </h1>
+
+    <script>
+        let numero1 = Number(prompt("Digite o 1º número:"));
+
+        let numero2 = Number(prompt("Digite o 2º número:"));
+
+        let numero3 = Number(prompt("Digite o 3º número:"));
+
+        let numero4 = Number(prompt("Digite o 4º número:"));
+
+        let numero5 = Number(prompt("Digite o 5º número:"));
+
+        if (numero1 > numero2 && numero1 > numero3 && numero1 > numero4 && numero1 > numero5)
+        {alert("O 1º núemro com valor igual a: " + numero1 + " é o maior.11");}
+
+        else if (numero2 > numero1 && numero2 > numero3 && numero2 > numero4 && numero2 > numero5)
+        {alert("O 2º núemro com valor igual a: " + numero2 + " é o maior.");}
+
+        else if (numero3 > numero1 && numero3 > numero2 && numero3 > numero4 && numero3 > numero5)
+        {alert("O 3º núemro com valor igual a: " + numero3 + " é o maior.");}
+
+        else if (numero4 > numero1 && numero4 > numero3 && numero4 > numero2 && numero4 > numero5)
+        {alert("O 4º núemro com valor igual a: " + numero4 + " é o maior.");}
+
+        else if (numero5 > numero1 && numero5 > numero3 && numero5 > numero4 && numero5 > numero2)
+        {alert("O 5º núemro com valor igual a:  " + numero5 + " é o maior.");}
+
+        else {alert("Todos os números são iguais");}
+
+    </script>
+</body>
+</html>
