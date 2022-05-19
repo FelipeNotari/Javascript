@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada com botões</title>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    
+    <button onclick="mostrarTabuada()" id="01">Criar tabuada</button>
+
+    <button onclick="limparTabuada()">Limpar tabuada</button>
+
+    <div id="output"></div>
+
+    <script>
+        
+        var output = document.querySelector("#output");
+
+        var mensagem = ""
+
+
+        function mostrarTabuada() 
+        {
+            let numero = Number(prompt("Digite um número"));
+
+            limparTabuada();
+
+            for (let i = 1; i <= 1000; i++) 
+            {
+                mensagem += (i + " x " + numero + " = ") + i * numero + "<br>";
+
+                output.innerHTML = mensagem;
+            }
+        }        
+    
+        function limparTabuada() 
+        {
+            mensagem = "";
+            output.innerHTML = mensagem;
+        }
+    </script>
+</body>
+</html>
